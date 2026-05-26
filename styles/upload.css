@@ -1,0 +1,52 @@
+body{
+    width: 100vw;
+    
+        background-color: var(--light-black);
+
+    #mainContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+    form{
+        grid-column: 2/3;
+        border: 2px;
+        border-color: var(--light-black3);
+        border-style: solid;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: var(--light-black2);
+        padding: 10px;
+
+        h1{
+            text-align: center;
+        }
+
+        input{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .radio{
+            display: inline;
+            width: min-content;
+            
+        }
+
+        button{
+            margin-top: 10px;
+            width: 30%;
+            background-color: var(--light-black3);
+            border: 2px;
+            border-radius: 100px;
+            border-style: solid;
+            border-color: var(--text-gray);
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/upload.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>Sugerir canciones</title>
+</head>
+<body>
+    <nav>
+        <a id="logo" href="/index.html">
+            YOUFEST
+        </a>
+
+        <div id="navBar">
+            <a href="/player.html">Reproductor</a>
+            <a href="">Iniciar sesion</a>
+        </div>
+    </nav>
+
+    <div id="mainContainer">
+        <form action="https://formspree.io/f/mzdwkjrz" method="post">
+            <H1>Sugerir una canción</H1>
+
+            <input type="text" id="inputTitulo" name="songTitle" placeholder="Título">
+
+            <input type="text" id="inputArtista" name="artist" placeholder="Artista">
+
+            <input class="radio" type="radio" name="source" id="radioArchivo" value="file">
+            <label for="radioArchivo">Archivo</label>
+            <br>
+            <input class="radio" type="radio" name="source" id="radioLinkYoutube" value="ytLink">
+            <label for="radioLinkYoutube">Link de YouTube</label>
+
+            <input type="file" name="file" id="inputArchivo">
+
+            <div>
+                <button>Subir</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -3,35 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/player.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <title>Welcome to YOUFEST</title>
 </head>
 <body>
+    <nav>
+        <a id="logo" href="/index.html">
+            YOUFEST
+        </a>
+
+        <div id="navBar">
+            <a href="/upload.html">Subir canciones</a>
+            <a href="">Iniciar sesion</a>
+        </div>
+    </nav>
+
     <div id="mainContainer">
-        <nav>
-            <div id="logo">
-                YOUFEST
-            </div>
-
-            <div id="navBar">
-                <div>Comprar entradas</div>
-                <div>Iniciar sesion</div>
-            </div>
-        </nav>
-
         <main id="songList">
             <div class="songItem">
                 <img></img>
-                
+                <div>
+                    <h2>Titulo</h2>
+                    <sub>Artista</sub>
+                </div>
+            </div>
+            <div class="songItem">
+                <img></img>
+                <div>
+                    <h2>Titulo</h2>
+                    <sub>Artista</sub>
+                </div>
+            </div>
+            <div class="songItem">
+                <img></img>
+                <div>
+                    <h2>Titulo</h2>
+                    <sub>Artista</sub>
+                </div>
+            </div>
+            <div class="songItem">
+                <img></img>
+                <div>
+                    <h2>Titulo</h2>
+                    <sub>Artista</sub>
+                </div>
+            </div>
+            <div class="songItem">
+                <img></img>
+                <div>
+                    <h2>Titulo</h2>
+                    <sub>Artista</sub>
+                </div>
             </div>
         </main>
 
         <aside id="chat">
-            chat
+            <div>
+
+            </div>
+            <input type="text" placeholder="Chat">
         </aside>
 
         <footer>
-            reproductor
+            <div class="songItem">
+                <img></img>
+                <div>
+                    <h2>Titulo</h2>
+                    <sub>Artista</sub>
+                </div>
+            </div>
+            <audio src="./audio/Never Gonna Give You Up.m4a" controls></audio>
+            <i class="fa-regular fa-thumbs-up"></i>
         </footer>
     </div>
 </body>

@@ -1,0 +1,81 @@
+:root{
+    --text-white: #eeeeee;
+    --text-gray: #a5a5a5;
+    --light-black: #141414;
+    --light-black2: #1f1f1f;
+    --light-black3: #444444;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    color: var(--text-white);
+    font-size:large;
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: no;
+    font-style: normal;
+    text-decoration: none;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+input{
+    padding: 10px;
+    padding-inline: 15px;
+    background-color: rgba(0,0, 0, 0.0);
+    border-color: var(--light-black3);
+    border-radius: 100px;
+    border-style: solid;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 70px;
+        
+    nav{
+        height: 70px;
+        width: 100%;
+        padding: 10px;
+        padding-inline: 10px;
+        background-color: var(--light-black);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        position: fixed;
+        top: 0px;
+        z-index: 3;
+
+        border:0px;
+        border-bottom: 2px;
+        border-style: solid;
+        border-color: #333333;
+
+        #logo{
+            font-family: "Orbitron", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bolder;
+            font-style: normal;
+            font-size: 2rem;
+        }
+
+        #navBar{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+        }
+
+        #navBar>a{
+            padding-inline: 10px;
+        }
+    }
+}

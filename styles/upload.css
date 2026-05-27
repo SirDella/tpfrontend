@@ -1,13 +1,14 @@
 body{
     width: 100vw;
     
-        background-color: var(--light-black);
+    background-color: var(--light-black);
 
     #mainContainer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         width: 100%;
     }
+    
     form{
         grid-column: 2/3;
         border: 2px;

@@ -86,3 +86,11 @@ body{
         content: url("https://cdn-images.dzcdn.net/images/cover/18c414ae6def801b1a879eca5537b8c0/0x1900-000000-80-0-0.jpg");
     }
 }
+
+/* No me andan los media query por algún motivo */
+
+@media screen and (max-width: 500px) {
+    #mainContainer{
+        background-color: aqua;
+    }
+}

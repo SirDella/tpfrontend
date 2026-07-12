@@ -33,7 +33,9 @@ body{
             border-color: var(--light-black3);
             border-style: solid;
 
-            div{
+            #messages{
+                overflow-y: auto;
+                padding: 10px;
                 flex-grow: 1;
                 border: 0px;
                 border-bottom: 2px;
@@ -43,6 +45,15 @@ body{
 
             input{
                 margin: 10px;
+            }
+
+            #message{
+                padding: 10px;
+                border: 2px;
+                border-style: solid;
+                border-color: var(--light-black3);
+                border-radius: 10px;
+                margin-bottom: 10px;
             }
         }
 

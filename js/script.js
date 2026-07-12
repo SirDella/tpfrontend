@@ -10,9 +10,9 @@ let cargarCanciones = async () => {
                 <img></img>
                 <div>
                     <h2>` + element.title + `</h2>
-                    <sub>` + element.singer+`</sub>
+                    <sub>` + element.singer + `</sub>
                 </div>
-            </div>`
+            </div>`;
             console.log(element);
         });
     }
@@ -22,3 +22,15 @@ let cargarCanciones = async () => {
 }
 
 cargarCanciones();
+
+let chatInput = document.getElementById("chatInput");
+chatInput.addEventListener("keyup", ({key}) => {
+    if (key === "Enter") {
+        console.log("Se recibio el enter");
+        let messages = document.getElementById("messages");
+        messages.innerHTML += `<div id="message">
+                    ` + chatInput.value + `
+                </div>`;
+        chatInput.value = "";
+    }
+})
